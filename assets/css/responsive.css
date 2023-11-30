@@ -1,0 +1,228 @@
+@media (max-width: 767px) {
+    .sk-head-nav {
+        display: flex;
+        background: var(--main-color);
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        top: 0;
+        position: fixed;
+        left: -100vw;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        line-height: 70px;
+        transition: all ease-in-out 0.3s;
+    }
+    .sk-head-nav.show {
+        left: 0;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -3px;
+    }
+    .sk-head {
+        padding: 10px 0;
+        overflow: hidden;
+    }
+    .menu-icon svg {
+        width: 70px;
+        height: 70px;
+    }
+    .menu-icon svg path {
+        fill: var(--main-color);
+    }
+    .sk-menu ul li a {
+        font-size: 30px;
+        color: #222222;
+    }
+    .menu-close {
+        position: absolute;
+        top: -10px;
+        right: 30px;
+    }
+    .menu-close svg {
+        width: 30px;
+        height: 30px;
+    }
+    .menu-close svg path {
+        fill: white;
+    }
+    .sk-menu ul {
+        flex-direction: column;
+    }
+    .menu-close {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .sk-banner-wrap {
+        flex-wrap: wrap;
+    }
+    .sk-banner-wrap .cont,
+    .sk-banner-wrap .image {
+        width: 100%;
+    }
+    .sk-banner-wrap .image {
+        flex: auto;
+        margin-top: 50px;
+    }
+    .sect-2-wrap,
+    .sect-5-list {
+        flex-wrap: wrap;
+    }
+    .sect-2-item {
+        width: 50%;
+        padding: 15px px;
+    }
+    .sect-5 {
+        background: var(--main-color);
+    }
+    .sect-5-wrap {
+        background: none;
+    }
+    .sect-5-list {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .sect-5-item {
+        margin-left: 0;
+        width: 25%;
+    }
+    .sect-5-item img {
+        width: calc(100% - 40px);
+    }
+    .sect-5-item p {
+        color: white;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .sect-5-cont {
+        margin-top: 30px;
+    }
+    .sect-5-wrap h5 {
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 40px;
+    }
+    .sect-6-wrap .left img {
+        display: none;
+    }
+    .sect-6-tatis-right {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: end;
+        justify-content: end;
+    }
+    .sect-6-wrap .left,
+    .sect-6-wrap .right {
+        width: 100%;
+    }
+    .sect-6-tatis-right .item:nth-last-child(2) {
+        position: inherit;
+        bottom: 0;
+        right: calc(100% + 48px);
+    }
+    .sect-6-tatis-right .item {
+        width: 33.333333%;
+    }
+    .sect-price-wrap .item {
+        padding: 15px;
+    }
+    .sect-gift {
+        background-position: right;
+    }
+    .sect-gift-cont {
+        max-width: 600px;
+        margin-left: auto;
+        text-align: center;
+        padding: 50px 0;
+        margin: 0 auto;
+    }
+    .swiper-slide {
+        width: 250px;
+    }
+    .swiper-slide img {
+        height: 350px;
+    }
+    .swiper {
+        padding-left: 30px;
+    }
+    .swiper::after,
+    .swiper::before {
+        width: 30px;
+    }
+    .swiper-next {
+        right: 0px;
+    }
+    .swiper-prev {
+        left: 0px;
+    }
+    .sect-reg img {
+        position: absolute;
+        right: 0;
+    }
+    .sect-reg .form .title {
+        font-size: 23px;
+        line-height: 35px;
+    }
+    @media (max-width: 560px) {
+        .sect-4-col {
+            width: 100%;
+            padding: 15px;
+        }
+        .sect-5-item {
+            width: 50%;
+        }
+        .sect-5-cont {
+            flex-wrap: wrap;
+        }
+        .sect-5-more {
+            margin-left: auto;
+            margin-top: 35px;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+        .sect-6-wrap .center {
+            padding: 0;
+            width: 100%;
+        }
+        .sect-6-tatis-right {
+            padding-top: 0;
+            margin-top: -60px;
+        }
+        .sect-6-wrap .center img,
+        .sect-6-wrap .right img {
+            max-width: 100%;
+        }
+        .sect-6-img-main {
+            margin-right: 0;
+        }
+        .sect-6-statis-cent .item {
+            padding: 0 5px;
+        }
+        .sect-reg img {
+            display: none;
+        }
+        .input-row {
+            flex-wrap: wrap;
+        }
+        .input-row .label,
+        .input-row input,
+        .input-row .btn,
+        .input-row p {
+            width: 100%;
+            max-width: 100%;
+        }
+        .sk-banner-wrap {
+            padding: 50px 0;
+        }
+    }
+}
