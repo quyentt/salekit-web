@@ -1195,7 +1195,7 @@
             <div class="col-12 col-md-5 position-relative">
                 <div class="content-reg">
                     <h3>ƯU ĐÃI ĐẶC BIỆT TỪ</h3>
-                      <h2>SALEKIT WEB</h2>
+                    <h2>SALEKIT WEB</h2>
                     <div class="time-countdown">
                         <div id="countdown">
                             <ul>
@@ -1206,9 +1206,12 @@
                             </ul>
                         </div>
                     </div>
-                    <p><img src="assets/img/checked.svg" alt=""> Khóa học online SEO Master - Đưa website lên trang 1 Google ~ 3.950K</p>
-                    <p> <img src="assets/img/checked.svg" alt=""> Khóa học online Google Ads - Quảng cáo tìm kiếm Google ~ 3.950K</p>
-                    <p> <img src="assets/img/checked.svg" alt=""> 10 Trợ lý ảo ChatGPT giúp bạn viết bài chuẩn SEO ~ 500K</p>
+                    <p><img src="assets/img/checked.svg" alt=""> Khóa học online SEO Master - Đưa website lên trang 1
+                        Google ~ 3.950K</p>
+                    <p><img src="assets/img/checked.svg" alt=""> Khóa học online Google Ads - Quảng cáo tìm kiếm Google
+                        ~ 3.950K</p>
+                    <p><img src="assets/img/checked.svg" alt=""> 10 Trợ lý ảo ChatGPT giúp bạn viết bài chuẩn SEO ~ 500K
+                    </p>
                 </div>
                 <img src="assets/img/register-img.png" alt="" style="display: none">
             </div>
@@ -1223,8 +1226,31 @@
                     </div>
                     <div class="input-row">
                         <div class="label d-none">Số điện thoại</div>
+                        <input type="text" title="Số điện thoại" placeholder="Email">
+                    </div>
+                    <div class="input-row">
+                        <div class="label d-none">Số điện thoại</div>
                         <input type="text" title="Số điện thoại" placeholder="Số điện thoại">
                     </div>
+                    <div class="input-row">
+                        <div class="label d-none">Công ty</div>
+                        <input type="text" title="Công ty" placeholder="Công ty">
+                    </div>
+                    <div class="input-row">
+                        <div class="label d-none">Lĩnh vực Kinh doanh</div>
+                        <input type="text" title="Lĩnh vực Kinh doanh" placeholder="Lĩnh vực Kinh doanh">
+                    </div>
+                    <div class="input-row d-none">
+                        <select class="form-control">
+                            <option>Lĩnh vực kinh doanh</option>
+                        </select></div>
+                    <div class="input-row-group">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1" class="label d-none">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Yêu cầu thêm</textarea>
+                        </div>
+                    </div>
+                    <!--                    ------------>
                     <div class="input-row mb-0">
                         <div class="label d-none"></div>
                         <button class="btn">
@@ -1342,7 +1368,7 @@
         //end
 
         const countDown = new Date(birthday).getTime(),
-            x = setInterval(function() {
+            x = setInterval(function () {
 
                 const now = new Date().getTime(),
                     distance = countDown - now;

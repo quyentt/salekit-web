@@ -353,7 +353,7 @@
 }
 
 @media (min-width: 768px) {
-    .input-row {
+    .input-row ,.input-row-group {
         width: 400px;
         margin: 0px auto 15px auto;
     }
