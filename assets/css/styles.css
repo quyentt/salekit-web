@@ -34,7 +34,7 @@ li {
     top: 0;
     transition: all 1s;
     background: #ffffff;
-    z-index: 1;
+    z-index: 10;
 }
 
 .sk-head.is-fixed {
@@ -123,8 +123,14 @@ li {
     position: relative;
     overflow: hidden;
     margin-top: 78px;
+    background: url(../img/bg-register.jpg) 0% 0% / cover no-repeat;
+    /*background-image: linear-gradient(90deg, #006aea 0%, #58c6d2 100%) !important;*/
+    min-height: 600px;
 }
-
+.sk-banner .container {
+    z-index: 9;
+    position: relative;
+}
 .sk-banner-wrap {
     display: flex;
     align-items: center;
@@ -141,6 +147,8 @@ li {
     background-repeat: no-repeat;
     background-size: contain;
     right: -190px;
+    opacity: 0.2;
+    display: none;
 }
 
 .sk-banner-wrap .cont {
@@ -152,16 +160,18 @@ li {
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
-    line-height: 48px
+    line-height: 48px;
+    color:#fff
 }
 
 .sk-banner-wrap .cont .title {
     font-size: 34px;
     font-style: normal;
     font-weight: 900;
+    padding: 10px 0px;
     line-height: 48px;
     text-transform: uppercase;
-    color: #D62A27;
+    color: #FFC92B;
 }
 
 .sk-banner-wrap .cont p {
@@ -169,7 +179,8 @@ li {
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
-    margin: 0;
+    /*margin: 0;*/
+    color:#fff
 }
 
 .sk-banner-wrap .image {
@@ -183,6 +194,7 @@ li {
 
 .btn-banner {
     border-radius: 90px;
+
     background: linear-gradient(90deg, #D62A27 1.57%, #F06724 51.13%, #FFC92B 98.14%);
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
     font-size: 20px;
@@ -228,7 +240,7 @@ li {
 }
 
 .sect-2 {
-    padding-top: 40px;
+    padding-top: 85px;
     padding-bottom: 85px;
     overflow: hidden;
 }
@@ -269,7 +281,7 @@ li {
 }
 
 .sect-3 {
-    background: url("../img/bg-sect-3.png");
+    background: url("../img/bg-sect-3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 828px;
@@ -363,9 +375,11 @@ li {
     line-height: normal;
     margin-bottom: 10px;
 }
-.sect-3-image{
+
+.sect-3-image {
     text-align: center;
 }
+
 .sect-3-image img {
     max-width: 100%;
     max-height: 400px;
@@ -514,7 +528,7 @@ li {
 }
 
 .sect-6 {
-    background: url("../img/bg-sect-3.png");
+    background: url("../img/bg-sect-3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 828px;
@@ -560,6 +574,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 90;
 }
 
 .sect-6-statis-cent .item {
@@ -630,7 +646,7 @@ li {
 }
 
 .sect-price-wrap .item .item-wrap {
-    background: url("../img/bg-price-1.png");
+    background: url("../img/bg-price-1.png") top center no-repeat;
     background-repeat: no-repeat;
     max-width: 332px;
     min-height: 506px;
@@ -714,7 +730,7 @@ li {
 }
 
 .sect-price-wrap .item:nth-child(2) .item-wrap {
-    background: url("../img/bg-price-2.png");
+    background: url("../img/bg-price-2.png") top center no-repeat;
 }
 
 .sect-price-wrap .item:nth-child(2) .item-wrap .price {
@@ -730,7 +746,7 @@ li {
 }
 
 .sect-price-wrap .item:nth-child(3) .item-wrap {
-    background: url("../img/bg-price-3.png");
+    background: url("../img/bg-price-3.png") top center no-repeat;
 }
 
 .sect-price-wrap .item:nth-child(3) .item-wrap .price {
@@ -769,7 +785,7 @@ li {
 }
 
 .sect-gift {
-    background: url("../img/bg-Seo-Master.png");
+    background: url("../img/bg-Seo-Master.jpg");
     min-height: 580px;
     background-size: cover;
     background-position: center;
@@ -940,6 +956,14 @@ li {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10);
 }
 
+.swiper-slide:hover {
+    box-shadow: 0px 2px 92px 0px rgb(0 0 0 / 25%);
+}
+
+.swiper-slide:hover .content {
+    background: rgba(255, 255, 255, 1);
+}
+
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -951,6 +975,50 @@ li {
 
 .swiper-slide img:hover {
     object-position: bottom;
+}
+
+.swiper-slide .content {
+    background: rgba(255, 255, 255, 0.9);
+    width: 95%;
+    height: 44px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10);
+    font-size: 16px;
+    color: #222;
+    font-weight: bold;
+    padding: 0 10px;
+    position: absolute;
+    z-index: 3;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+}
+
+.swiper-slide .content h3 {
+    font-size: 16px;
+    color: #222;
+    font-weight: bold;
+    line-height: 44px;
+}
+
+.swiper-slide .content span {
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+    color: #D62A27;
+    font-weight: bold;
+    line-height: 44px;
+    margin-top: -2px;
+}
+
+.swiper-slide .content .btn {
+    font-size: 14px;
+    color: #fff;
+    background: #D62A27;
+    font-weight: 500;
+    line-height: 16px;
+    height: 30px;
+    border-radius: 4px;
+    margin-left: 10px;
 }
 
 .swiper-next {
@@ -1000,8 +1068,11 @@ li {
 }
 
 .sect-8-box:hover {
-    background: var(--main-color);
-    color: white;
+    transform: translate(0, -3px);
+    box-shadow: 0px 2px 92px 0px rgb(0 0 0 / 25%);
+}
+
+.sect-8-box:hover {
 }
 
 .sect-8-box p {
@@ -1014,6 +1085,14 @@ li {
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.10);
     margin-bottom: 20px;
     border-left: solid 5px var(--main-color);
+}
+
+.accordionsk-item:hover {
+    box-shadow: 0px 2px 20px 0px rgb(0 0 0 /25%);
+}
+
+.accordionsk-item:hover button {
+    color: var(--main-color);
 }
 
 .accordionsk-item:has(.collapsed) {
@@ -1084,10 +1163,10 @@ li {
 }
 
 .sect-reg {
-    background: url(../img/bg-register.png);
+    background: url(../img/bg-register.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 568px;
+    min-height: auto;
     padding: 60px 0;
     overflow: hidden;
 }
@@ -1106,6 +1185,7 @@ li {
     font-weight: 700;
     line-height: 48px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .input-row {
@@ -1131,7 +1211,7 @@ li {
     height: 42px;
     border: solid 1px white;
     padding: 0 20px;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .input-row input:focus-visible {
@@ -1152,10 +1232,11 @@ li {
     text-transform: uppercase;
     width: 100%;
     height: 42px;
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 6px;
     background: linear-gradient(90deg, #D62A27 1.57%, #F06724 51.13%, #FFC92B 98.14%);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10);
+    border: 1px solid #F06724;
 }
 
 .input-row .btn svg {
@@ -1173,8 +1254,8 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: 48px;
-    width: 300px;
     max-width: 100%;
+    min-width: 100%;
 }
 
 .sk-lang ul li {
@@ -1209,7 +1290,8 @@ li {
 
 #button {
     display: inline-block;
-    background-color: #FF9800;
+    background-color: #4B86C6;
+    border: 1px solid #fff;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -1240,4 +1322,90 @@ li {
 #button.show {
     opacity: 1;
     visibility: visible;
+}
+
+.content-reg {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    padding: 40px 0px;
+    text-align: center;
+    color: #fff;
+    margin: 0px 20px 0px 0px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.content-reg h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #FFC92B;
+}
+
+.content-reg h3 {
+    font-weight: 700;
+}
+
+.content-reg p {
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 0px 40px;
+    display: flex;
+}
+.content-reg p img {
+    width: 16px;
+    margin-right: 10px;
+    float: left;
+    margin-top: -18px;
+}
+.time-countdown {
+    background: linear-gradient(90deg, #D62A27 1.57%, #F06724 51.13%, #FFC92B 98.14%);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10);
+    /*border: 1px solid #F06724;*/
+    margin: 30px 0px;
+}
+
+.time-countdown li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    list-style-type: none;
+    padding: 1em;
+}
+
+.time-countdown li span {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    line-height: 40px;
+    min-width: 44px;
+}
+.time-countdown li span:before {
+    content: ":";
+    position: absolute;
+    font-size: 30px;
+}
+.time-countdown li:first-child span:before {
+    left: 86px;
+}
+.time-countdown li:nth-child(2) span:before,
+.time-countdown li:nth-child(3) span:before,
+.time-countdown li:nth-child(4) span:before{
+    left: 62px;
+}
+.time-countdown li:nth-child(4) span:before{
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+    .time-countdown h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    .time-countdown li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    .time-countdown li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
 }
